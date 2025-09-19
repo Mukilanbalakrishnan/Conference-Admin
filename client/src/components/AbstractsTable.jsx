@@ -86,7 +86,7 @@
 // // //           : { abstractStatus: newStatus.toLowerCase() };
 
 // // //       await axios.put(
-// // //         `http://localhost:5000/api/admin/users/abstract-status/${abs.userId}`,
+// // //         `https://it-con-backend.onrender.com/api/admin/users/abstract-status/${abs.userId}`,
 // // //         payload,
 // // //         { headers: { Authorization: `Bearer ${token}` } }
 // // //       );
@@ -381,7 +381,7 @@
 // // //           : { abstractStatus: newStatus.toLowerCase() };
 
 // // //       await axios.put(
-// // //         `http://localhost:5000/api/admin/users/abstract-status/${abs.userId}`,
+// // //         `https://it-con-backend.onrender.com/api/admin/users/abstract-status/${abs.userId}`,
 // // //         payload,
 // // //         { headers: { Authorization: `Bearer ${token}` } }
 // // //       );
@@ -724,7 +724,7 @@
 // //           : { abstractStatus: newStatus.toLowerCase() };
 
 // //       await axios.put(
-// //         `http://localhost:5000/api/admin/users/abstract-status/${abs.userId}`,
+// //         `https://it-con-backend.onrender.com/api/admin/users/abstract-status/${abs.userId}`,
 // //         payload,
 // //         { headers: { Authorization: `Bearer ${token}` } }
 // //       );
@@ -1065,7 +1065,7 @@
 // //           : { abstractStatus: newStatus.toLowerCase() };
 
 // //       await axios.put(
-// //         `http://localhost:5000/api/admin/users/abstract-status/${abs.userId}`,
+// //         `https://it-con-backend.onrender.com/api/admin/users/abstract-status/${abs.userId}`,
 // //         payload,
 // //         { headers: { Authorization: `Bearer ${token}` } }
 // //       );
@@ -1410,7 +1410,7 @@
 //           : { abstractStatus: newStatus.toLowerCase() };
 
 //       await axios.put(
-//         `http://localhost:5000/api/admin/users/abstract-status/${abs.userId}`,
+//         `https://it-con-backend.onrender.com/api/admin/users/abstract-status/${abs.userId}`,
 //         payload,
 //         { headers: { Authorization: `Bearer ${token}` } }
 //       );
@@ -2096,7 +2096,7 @@ const UnifiedAbstractDashboard = ({ abstractsData, loading, updateAbstractLocal 
           : { abstractStatus: newStatus.toLowerCase() };
 
       await axios.put(
-        `http://localhost:5000/api/admin/users/abstract/${abs.userId}`,
+        `https://it-con-backend.onrender.com/api/admin/users/abstract/${abs.userId}`,
         payload,
         { headers: { Authorization: `Bearer ${token}` } }
       );

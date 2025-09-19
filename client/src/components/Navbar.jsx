@@ -50,7 +50,7 @@ const SideNavbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:5000/api/admin/logout", {}, {
+      await axios.post("https://it-con-backend.onrender.com/api/admin/logout", {}, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
     } catch (err) {

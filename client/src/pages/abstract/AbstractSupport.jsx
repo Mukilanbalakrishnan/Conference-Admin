@@ -44,7 +44,7 @@
 //     setLoading(true);
 //     try {
 //       const token = localStorage.getItem("token");
-//       const { data } = await axios.get("http://localhost:5000/api/admin/users", {
+//       const { data } = await axios.get("https://it-con-backend.onrender.com/api/admin/users", {
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
 
@@ -147,7 +147,7 @@
 //   const updateAbstractLocal = async (userId, newStatus) => {
 //     try {
 //       await axios.put(
-//         `http://localhost:5000/api/admin/users/abstract-status/${userId}`,
+//         `https://it-con-backend.onrender.com/api/admin/users/abstract-status/${userId}`,
 //         { abstractStatus: newStatus },
 //         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
 //       );
@@ -241,7 +241,7 @@
 //     try {
 //       const token = localStorage.getItem("token");
 //       const { data } = await axios.get(
-//         "http://localhost:5000/api/admin/users",
+//         "https://it-con-backend.onrender.com/api/admin/users",
 //         { headers: { Authorization: `Bearer ${token}` } }
 //       );
 
@@ -354,7 +354,7 @@
   // const updateAbstractLocal = async (userId, newStatus) => {
   //   try {
   //     await axios.put(
-  //       `http://localhost:5000/api/admin/users/abstract-status/${userId}`,
+  //       `https://it-con-backend.onrender.com/api/admin/users/abstract-status/${userId}`,
   //       { status: newStatus },
   //       { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
   //     );
@@ -455,7 +455,7 @@
 //     try {
 //       const token = localStorage.getItem("token");
 //       const { data } = await axios.get(
-//         "http://localhost:5000/api/admin/users",
+//         "https://it-con-backend.onrender.com/api/admin/users",
 //         { headers: { Authorization: `Bearer ${token}` } }
 //       );
 
@@ -572,7 +572,7 @@
 //   const updateAbstractLocal = async (userId, newStatus) => {
 //     try {
 //       await axios.put(
-//         `http://localhost:5000/api/admin/users/abstract-status/${userId}`,
+//         `https://it-con-backend.onrender.com/api/admin/users/abstract-status/${userId}`,
 //         { status: newStatus },
 //         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
 //       );
@@ -790,7 +790,7 @@
 //   const updateAbstractLocal = async (userId, newStatus) => {
 //     try {
 // await axios.put(
-//   `http://localhost:5000/api/admin/users/abstract/${userId}`,
+//   `https://it-con-backend.onrender.com/api/admin/users/abstract/${userId}`,
 //   { status: newStatus },
 //   { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
 // );
@@ -890,7 +890,7 @@ const AbstractSupport = () => {
     try {
       const token = localStorage.getItem("token");
       const { data } = await axios.get(
-        "http://localhost:5000/api/admin/users",
+        "https://it-con-backend.onrender.com/api/admin/users",
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
@@ -1005,7 +1005,7 @@ const AbstractSupport = () => {
   const updateAbstractLocal = async (userId, newStatus) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/admin/users/abstract/${userId}`,
+        `https://it-con-backend.onrender.com/api/admin/users/abstract/${userId}`,
         { status: newStatus },
         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
       );
