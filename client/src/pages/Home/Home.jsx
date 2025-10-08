@@ -324,7 +324,7 @@ const MainDashboard = () => {
       setTrend([]);
       setCountryCounts({});
     }
-  }, []);
+  }, [updateCountryCounts]);
 
   useEffect(() => {
     fetchRegistrations();
@@ -380,7 +380,7 @@ const MainDashboard = () => {
   };
 
   // --- Country Distribution ---
-  const updateCountryCounts = async (data) => {
+  const updateCountryCounts = useCallback(async (data) => {
     const counts = {};
     const coordinates = {};
 
@@ -398,7 +398,7 @@ const MainDashboard = () => {
 
     setCountryCounts(counts);
     setCountryCoordinates(coordinates);
-  };
+  }, []);
 
   const chartData = [{ name: "Registrations", approved: stats.approved, rejected: stats.rejected }];
 
