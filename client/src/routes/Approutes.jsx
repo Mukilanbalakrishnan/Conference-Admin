@@ -8,19 +8,23 @@ import MainDashboard from '../pages/Home/Home';
 import AbstractSupport from '../pages/abstract/AbstractSupport';
 import SignInPage from '../pages/mvpblocks/LoginForm';
 import ProtectedRoute from './ProtectedRoute';
-import Client from '../pages/clientproject/client';
+// import Client from '../pages/clientproject/client';
+import Inbox from '../pages/contactSupport/ContactSupport';
+import PaymentPage from '../pages/payment/PaymentSupport';
 const Approutes = () => {
   return (
     <BrowserRouter>
       <Routes>
         {/* Public Route */}
         <Route path="/" element={<SignInPage />} />
-        <Route path='/client' element={<Client />} />
+        {/* <Route path='/client' element={<Client />} /> */}
         {/* Protected Routes */}
         <Route element={<ProtectedRoute />}>
           <Route element={<MainLayout />}>
             <Route path="/dashboard" element={<MainDashboard />} /> 
             <Route path="/abstract" element={<AbstractSupport />} />
+            <Route path='/inbox' element={<Inbox/>}/>
+            <Route path='/payment' element={<PaymentPage/>}/>
           </Route>
         </Route>
 

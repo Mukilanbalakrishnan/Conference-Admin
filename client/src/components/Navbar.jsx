@@ -6,7 +6,7 @@ import { useAuth } from '../context/useAuth';
 // --- Icon Components ---
 const icons = {
   logo: (
-    <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" xmlns="https://res.cloudinary.com/dllbh1v1m/image/upload/v1755753110/pcytcphmgc1irewg4suw.webp">
       <rect width="24" height="24" rx="6" fill="#F57C00"/>
       <path d="M8 12L11 15L16 9" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
@@ -40,8 +40,8 @@ const navLinks = [
   { id: 'documents', label: 'Payment', icon: icons.documents, href: '/payment' },
   { id: 'file', label: 'Final paper', icon: icons.documents, href: '/file' },
   { id: 'inbox', label: 'Inbox', icon: icons.inbox, href: '/inbox' },
-  { id: 'history', label: 'History', icon: icons.history, href: '/history' },
-  { id: 'settings', label: 'Settings', icon: icons.settings, href: '/settings' },
+  // { id: 'history', label: 'History', icon: icons.history, href: '/history' },
+  // { id: 'settings', label: 'Settings', icon: icons.settings, href: '/settings' },
 ];
 
 const SideNavbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
@@ -71,8 +71,11 @@ const SideNavbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         }`}
       >
         <div className="flex items-center p-6 border-b border-[#1976D2]">
-          {icons.logo}
-          <h1 className="text-2xl font-bold text-white ml-3">Lingua</h1>
+          <div className='grid gap-5'>
+          <img src="https://res.cloudinary.com/dllbh1v1m/image/upload/v1755753110/pcytcphmgc1irewg4suw.webp" alt="" />
+         <img src="https://res.cloudinary.com/dllbh1v1m/image/upload/v1755753114/uhlv9wulx2dexlv6bnz2.png" alt="" />
+          </div>
+          {/* <h1 className="text-2xl font-bold text-white ml-3">Lingua</h1> */}
         </div>
 
         <nav className="flex-1 py-6 px-4 space-y-2">
